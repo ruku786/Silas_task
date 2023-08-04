@@ -1,0 +1,42 @@
+Azure Databricks for data processing and Azure SQL Database for storing the processed data.
+
+1.Set up Azure Databricks:
+
+Create an Azure Databricks workspace in the Azure portal.
+Set up a cluster with appropriate configurations based on your dataset size and processing needs.
+Upload Data and Code:
+
+2.Upload your dataset files (products.csv, customer_records.csv and order_items.csv) to Azure Databricks.
+Upload the PySpark script containing the data processing code to Azure Databricks.
+Create an Azure SQL Database:
+
+3.Create an Azure SQL Database in the Azure portal to store the processed data.
+Note down the server name, database name, username, and password for later use.
+Modify the PySpark Script:
+
+Update the PySpark script to read data from the uploaded files on Azure Databricks instead of local paths.
+Modify the script to write the processed data into the Azure SQL Database using the credentials obtained in the previous step.
+Run the PySpark Script on Azure Databricks:
+
+4.Open your PySpark script in Azure Databricks and run it on the configured cluster.
+Verify that the data processing tasks are executed successfully.
+Monitor and Optimize Performance:
+
+4.Monitor the performance and resource usage of your Azure Databricks cluster using the Databricks UI or Azure Monitor.
+Adjust the cluster settings and size as needed to optimize performance and cost.
+Enable High Availability:
+
+5.To ensure high availability, consider creating an additional standby cluster in a different Azure region.
+Configure the necessary replication and failover mechanisms between the primary and standby clusters.
+Set up Automated Data Pipeline:
+
+6.Schedule the PySpark script to run at regular intervals using Databricks Jobs or Azure Data Factory.
+This will enable automated data processing and ensure that the data in Azure SQL Database is up-to-date.
+Implement Data Security:
+
+7.Use Azure Key Vault to securely store and manage any sensitive information like database credentials.
+Configure appropriate access control and encryption measures to protect the data.
+By following the steps above, you will have successfully deployed and optimized your data pipeline and application on Azure Cloud, ensuring high availability and performance for your data infrastructure. Additionally, Azure provides various other services that can further enhance your data processing capabilities, such as Azure Data Lake Storage, Azure HDInsight, and Azure Synapse Analytics, depending on your specific requirements.
+
+
+
